@@ -8,11 +8,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-
-
 ## Jij
 
-<details open>
+<details>
   <summary>Uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
@@ -27,11 +25,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-
-
 ## Je website
 
-<details open>
+<details>
   <summary>Uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
@@ -39,11 +35,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   [Home | Porsche Nederland](https://www.porsche.com/netherlands/nl/ "Porsche's Homepage")
-  <img src="images/home-porsche-nederland.png" width="375px" alt="Home pagina van de website van Porsche Nederland">
+  <img src="readme-images/home-porsche-nederland.png" width="375px" alt="Home pagina van de website van Porsche Nederland">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   [Over Porsche | Porsche Nederland](https://www.porsche.com/netherlands/nl/aboutporsche/ "Over Porsche")
-  <img src="images/over-porsche-porsche-nederland.png" width="375px" alt="Over Porsche pagina van de website van Porsche Nederland">
+  <img src="readme-images/over-porsche-porsche-nederland.png" width="375px" alt="Over Porsche pagina van de website van Porsche Nederland">
 
 </details>
 
@@ -51,28 +47,64 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Toegankelijkheidstest 1/2 (week 1)
 
-<details>
+<details open>
   <summary>Uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
-  ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  ### Lijst met bevindingen
+  #### Screenreader test:
+  * **Kopstructuur:**
+    * Koppen van niveau 1 en 2 worden goed voorgelezen met niveau-aanduiding, wat storend kan zijn als dit meerdere keren wordt herhaald.
+    * Footer-koppen worden niet herkend door de screenreader, omdat deze als `<div>` in plaats van bijvoorbeeld `<h4>` zijn geschreven.
+  * **Linkbeschrijvingen:**
+    * Niet alle links geven duidelijk aan waar ze naartoe leiden, vooral in de hero-sectie.
 
+  #### WCAG checklist:
+  * **Content**
+      * Gebruik van eenvoudige taal en unieke, beschrijvende content voor knoppen en links is goed.
+  * **Globale Code:**
+      * HTML is gevalideerd en heeft wat info, warning en errors.
+      * Heeft een unieke titel voor elke pagina en het gebruik van een lang-attribuut.
+  * Toetsenbordnavigatie:
+      * Navigatie-elementen hebben zichtbare focusstijlen en de focusvolgorde komt overeen met de visuele lay-out.
+  * **Mobiel en Touch:**
+      * Website ondersteunt oriëntatierotatie en vermijdt horizontaal scrollen.
+      * Interactieve elementen zijn goed gepositioneerd en gemakkelijk te activeren.
+  * **Koppen**
+      * Koppen zijn logisch en volgen een juiste hiërarchie, maar footer-items worden niet als koppen herkend.
+  * **Lijsten**
+      * Lijstinhoud maakt correct gebruik van lijst-elementen zoals `<ul>` en `<ol>`.
+  * **Afbeeldingen**
+      * Afbeeldingen hebben een alt-attribuut, maar afbeeldingen met tekst missen een volledige beschrijving.
+      * Decoratieve afbeeldingen gebruiken correct een lege alt.
+  * **Media (Video & Audio)**
+      * Media speelt automatisch af, er is wel een mogelijkheid om te pauzeren.
+      * Er zijn geen video-onderschriften of audio-transcripties beschikbaar.
+  * **Controls**
+      * Links en knoppen zijn herkenbaar en hebben een focusstijl.
+      * Skip-links zijn niet duidelijk zichtbaar.
+  * **Uiterlijk**
+      * Ondersteuning voor dark mode en high-contrast mode ontbreekt. Wel via de Chrome accessibility. 
+      * Tekst kan worden vergroot tot 200% zonder problemen.
+  * **Animaties**
+      * Animaties blijven actief, zelfs als reduced-motion is ingeschakeld.
+  * **Kleurcontrast**
+      * Contrasten zijn over het algemeen goed, maar witte tekst op een witte achtergrond is soms moeilijk leesbaar. Dit is bij sommige afbeeldingen.
 </details>
 
 
 
 ## Breakdownschets (week 1)
 
-<details>
+<details open>
   <summary>Uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
-  ### de hele pagina: 
+  ### De hele pagina: 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
 
-  ### dynamisch deel (bijv menu): 
+  ### Dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
+  ### Wellicht nog een dynamisch deel (bijv filter): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
