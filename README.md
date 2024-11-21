@@ -99,7 +99,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>Uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### De hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/Breakdownschets-Home-Porsche-Nederland.jpg" width="375px" alt="breakdown van de hele home pagina">
 
   ### Dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
