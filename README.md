@@ -38,8 +38,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/home-porsche-nederland.png" width="375px" alt="Home pagina van de website van Porsche Nederland">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  [Over Porsche | Porsche Nederland](https://www.porsche.com/netherlands/nl/aboutporsche/ "Over Porsche")
-  <img src="readme-images/over-porsche-porsche-nederland.png" width="375px" alt="Over Porsche pagina van de website van Porsche Nederland">
+  [Porsche24. | Porsche Nederland](https://www.porsche.com/netherlands/nl/motorsportandevents/porsche24/ "Porsche24. pagina")
+  <img src="readme-images/porsche24-porsche-nederland.png" width="375px" alt="Porsche24. pagina van de website van Porsche Nederland">
 
 </details>
 
@@ -98,7 +98,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details open>
   <summary>Uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
-  ### De hele pagina: 
+  ### De hele pagina:
   <img src="readme-images/Breakdownschets-Home-Porsche-Nederland.jpg" width="375px" alt="breakdown van de hele home pagina">
 
   ### Dynamisch deel (bijv menu): 
