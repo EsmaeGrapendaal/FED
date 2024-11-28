@@ -14,84 +14,126 @@
 </head>
 
 <body>
-	<header class="container">
+	<header>
 		<section>
-			<img src="./images/svg/menu-lines.svg" alt="menu icon" class="header_icon">
-			<p class="menu_text">Menu</p>
+			<img src="./images/svg/menu-lines.svg" alt="menu icon">
+			<p>Menu</p>
 		</section>
 		<section>
-			<img src="./images/svg/Porsche-Crest.svg" alt="Porsche logo" class="header_logo">
+			<img src="./images/svg/Porsche-Crest.svg" alt="Porsche logo">
 		</section>
 		<section>
-			<img src="./images/svg/user.svg" alt="person icon" class="header_icon header_user_icon">
+			<img src="./images/svg/user.svg" alt="person icon">
 		</section>
-	  </header>
+	</header>
 
-	<main>
-		<section>
-			<a href="https://www.porsche.com/netherlands/nl/models/taycan/taycan-models/taycan-gts/">
-				<h2>Overfeel.</h2>
-				<span>Ontdek de nieuwe Taycan GTS.</span>
-			</a>
+	<main class="home-pagina">
+		<h1 class="visually-hidden">Home | Porsche Nederland</h1>
+		<section id="home-hero-slider" class="heroCarrousel" aria-label="Carrousel met Porsche modellen" tabIndex="-1"> <!-- Bron: https://codepen.io/shooft/pen/yLKjzWa  -->
+			<ul>
+				<li id="porsche-taycan-gts">
+					<img src="/images/hero-porsche-taycan-gts.jpg" alt="A woman standing in front of a shadegreen metallic Taycan in a modern setting."/>
+					<div class="hero-text">
+						<h2 class="visually-hidden">Porsche Taycan GTS</h2>
+						<h3>Overfeel.</h3>
+						<p>Experience the thrill of electric performance.</p>
+					</div>
+				</li>
+				<li id="porsche-911-carrera-t">
+					<img src="/images/hero-porsche-911-carrera-t.jpg" alt="Porsche 911 Carrera T in White. Side view."/>
+					<div class="hero-text">
+						<h2 class="visually-hidden">Porsche 911 Carrera T</h2>
+						<h3>The one and always.</h3>
+						<p>De nieuwe 911 Carrera T.</p>
+					</div>
+				</li>
+				<li id="porsche-panamera">
+					<img src="/images/hero-porsche-panamera.jpg" alt="Porsche - Choose boldly. - De nieuwe Panamera."/>
+				</li>
+				<li id="porsche-all-electric-macan">
+					<img src="/images/hero-porsche-all-electric-macan.jpg" alt="Rear shot of an Oak Green Metallic Neo Macan 4S standing in front of a lake with the mountains in the background."/>
+				</li>
+				<li id="porsche-taycan">
+					<img src="/images/hero-porsche-taycan.jpg" alt="Shot of a purplesky metallic Taycan Turbo GT with Weissach package in front of a purple background"/>
+				</li>
+			</ul>
+			
+			<nav>
+				<ul>
+					<li><a href="#porsche-taycan-gts" aria-label="Porsche Taycan GTS banner"></a></li>
+					<li><a href="#porsche-911-carrera-t" aria-label="Porsche 911 Carrera T banner"></a></li>
+					<li><a href="#porsche-panamera" aria-label="Porsche Panamera banner"></a></li>
+					<li><a href="#porsche-all-electric-macan" aria-label="Porsche all-electric Macan banner"></a></li>
+					<li><a href="#porsche-taycan" aria-label="Porsche Taycan banner"></a></li>
+				</ul>
+			</nav>
 		</section>
+
 		<section>
 			<h2>Modellen</h2>
 			<section>
 				<a href="https://www.porsche.com/netherlands/nl/models/718/">
-					<article>
-						<h3>718</h3>
-					</article>
+					<img src="./images/modellen-porsche-718.jpg" alt="Porsche 718">
+					<h3>718</h3>
 				</a>
 				<a href="https://www.porsche.com/netherlands/nl/models/911/">
-					<article>
-						<h3>911</h3>
-					</article>
+					<img src="./images/modellen-porsche-911.jpg" alt="Porsche 911">
+					<h3>911</h3>
 				</a>
 				<a href="https://www.porsche.com/netherlands/nl/models/taycan/">
-					<article>
-						<h3>Taycan</h3>
-					</article>
+					<img src="./images/modellen-porsche-taycan.jpg" alt="Porsche Taycan">
+					<h3>Taycan</h3>
 				</a>
 				<a href="https://www.porsche.com/netherlands/nl/models/panamera/">
-					<article>
-						<h3>Panamera</h3>
-					</article>
+					<img src="./images/modellen-porsche-panamera.jpg" alt="Porsche Panamera">
+					<h3>Panamera</h3>
 				</a>
 				<a href="https://www.porsche.com/netherlands/nl/models/macan/">
-					<article>
-						<h3>Macan</h3>
+					<img src="./images/modellen-porsche-macan.jpg" alt="Porsche Macan">
+					<h3>Macan</h3>
 					</article>
 				</a>
 				<a href="https://www.porsche.com/netherlands/nl/models/cayenne/">
-					<article>
-						<h3>Cayenne</h3>
-					</article>
+					<img src="./images/modellen-porsche-cayenne.jpg" alt="Porsche Cayenne">
+					<h3>Cayenne</h3>
 				</a>
 			</section>
 		</section>
-		<section>
+
+		<section class="container">
 			<h2>Actueel</h2>
 			<section>
-				<a href="https://www.porsche.com/netherlands/nl/motorsportandevents/porsche24/">
-					<img src="images/actueel-porsche24.jpg" alt="Porsche24. Rijden wordt beloond.">
-					<p>Porsche24 Rijden wordt beloond.</p>
-				</a>
-				<a href="https://www.porsche-shop.nl/lifestyle/">
-					<img src="images/actueel-porsche-lifestyle-collecties.jpg" alt="Porsche Lifestyle collecties.">
-					<p>Porsche Lifestyle collecties.</p>
-				</a>
-				<a href="https://finder.porsche.com/nl/nl_NL/search/list">
-					<img src="images/actueel-porsche-aanbod.jpg" alt="Porsche - Bekijk ons aanbod nieuw & Approved.">
-					<p>Bekijk ons aanbod nieuw & Approved.</p>
-				</a>
-				<a href="http://nieuws.porsche.nl/">
-					<img src="images/actueel-porsche-newsroom.jpg" alt="Nieuw(s): de Porsche newsroom.">
-					<p>Nieuw(s): de Porsche newsroom.</p>
-				</a>
+				<ul>
+					<li>
+						<a href="https://www.porsche.com/netherlands/nl/motorsportandevents/porsche24/">
+							<img src="images/actueel-porsche24.jpg" alt="Porsche24. Rijden wordt beloond.">
+							<p>Porsche24 Rijden wordt beloond.</p>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.porsche-shop.nl/lifestyle/">
+							<img src="images/actueel-porsche-lifestyle-collecties.jpg" alt="Porsche Lifestyle collecties.">
+							<p>Porsche Lifestyle collecties.</p>
+						</a>
+					</li>
+					<li>
+						<a href="https://finder.porsche.com/nl/nl_NL/search/list">
+							<img src="images/actueel-porsche-aanbod.jpg" alt="Porsche - Bekijk ons aanbod nieuw & Approved.">
+							<p>Bekijk ons aanbod nieuw & Approved.</p>
+						</a>
+					</li>
+					<li>
+						<a href="http://nieuws.porsche.nl/">
+							<img src="images/actueel-porsche-newsroom.jpg" alt="Nieuw(s): de Porsche newsroom.">
+							<p>Nieuw(s): de Porsche newsroom.</p>
+						</a>
+					</li>
+				</ul>
 			</section>
 			
 		</section>
-		<section>
+
+		<section class="container">
 			<h2>Service & Advies</h2>
 			<section>
 				<a href="https://www.porsche.com/netherlands/nl/models/?compare=">
@@ -109,10 +151,10 @@
 			</section>
 		</section>
 	</main>
-	<hr>
+
 	<footer>
-		<section>
-			<h4>Koopadvies</h4>
+		<details>
+			<summary>Koopadvies</summary>
 			<nav>
 				<ul>
 					<li>
@@ -129,9 +171,9 @@
 					</li>
 				</ul>
 			</nav>
-		</section>
-		<section>
-			<h4>Online services</h4>
+		</details>
+		<details>
+			<summary>Online services</summary>
 			<nav>
 				<ul>
 					<li>
@@ -145,9 +187,9 @@
 					</li>
 				</ul>
 			</nav>
-		</section>
-		<section>
-			<h4>Online services</h4>
+		</details>
+		<details>
+			<summary>Achter de schermen</summary>
 			<nav>
 				<ul>
 					<li>
@@ -158,9 +200,9 @@
 					</li>
 				</ul>
 			</nav>
-		</section>
-		<section>
-			<h4>Over Porsche</h4>
+		</details>
+		<details>
+			<summary>Achter de schermen</summary>
 			<nav>
 				<ul>
 					<li>
@@ -183,8 +225,7 @@
 					</li>
 				</ul>
 			</nav>
-			
-		</section>
+		</details>
 	</footer>
 </body>
 

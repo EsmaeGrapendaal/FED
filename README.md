@@ -39,7 +39,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   [Porsche24. | Porsche Nederland](https://www.porsche.com/netherlands/nl/motorsportandevents/porsche24/ "Porsche24. pagina")
-  <img src="readme-images/porsche24-porsche-nederland.png" width="375px" alt="Porsche24. pagina van de website van Porsche Nederland">
+  <img src="readme-images/Porsche24-porsche-nederland.png" width="375px" alt="Porsche24. pagina van de website van Porsche Nederland">
 
 </details>
 
@@ -47,7 +47,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Toegankelijkheidstest 1/2 (week 1)
 
-<details open>
+<details>
   <summary>Uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Lijst met bevindingen
@@ -95,7 +95,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Breakdownschets (week 1)
 
-<details open>
+<details>
   <summary>Uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### De hele pagina:
@@ -115,30 +115,30 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Voortgang 1 (week 2)
 
-<details>
+<details open>
   <summary>Uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+  | Esmae | student 2 | student 3 | student 4 |
+  | --- | --- | --- | --- |
+  | Carrousel slider | en dit | en ik dit | en dan ik dat |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | ... | ... | ... | ... |
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  * Maak de H1 onzichtbaar met visibility hidden op de home pagina
+  * Voor een article > Eerst een h5, p, img, button. Verander de volgorde met order in de css. Zo blijft alles hetzelfde in de html maar met de styling wordt het veranderd.
+  * In de Hero wordt de heading een h3 en dan een hidden h2
+  * Voor de carousel worden de items in een ul gezet
+  * HR wordt gewoon border-top en border-bottom
+  * Footer h4 worden h3 en dan ook weer een hidden h2
+  * Voor de accordeon gebruik je details en summary
+  * Social media links worden een flex ipv grid
 
 </details>
 
@@ -148,30 +148,37 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Voortgang 2 (week 3)
 
-<details>
+<details open>
   <summary>Uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  #### Wat ging goed?
+  * **Afbeeldingen en tekst combineren zonder `background-image`**<br>
+    Soms zijn er afbeeldingen met tekst, hiervoor kon ik geen `background-image` gebruiken vanwege toegankelijkheid. Hiervoor moest je `position` gebruiken om de tekst over de `img` te zetten.
+
+  #### Wat was lastig?
+  * **Logo centreren in de header**<br>
+    Ik kon maar het logo niet precies in het midden krijgen. Ik heb hiervoor `flex` moeten gebruiken om het logo een soort stretch te geven, maar dat de buitenste elementen wel tegen de rand blijven staan.
+  * **Hero carrousel maken**<br>
+  Hiervoor heb ik een code kunnen gebruiken van Sanne. Ik heb wel gekeken naar de code zodat ik wel begrijp wat alles betekent. Ik vind het Javascript gedeelte wel nog lastig om helemaal te begrijpen.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Esmae | student 2 | student 3 | student 4 |
+  | --- | --- | --- | --- |
+  | Eigen tekst per slide bij home pagina (Hero) | en dit | en ik dit | en dan ik dat |
+  | Navigatie bij Porsche24 pagina | nog een punt | dit wil ik zeker |
+  | Andere soort slider bij Porsche24 pagina | ... | ... | ... |
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  * punt 1
+  * punt 2
+  * nog een punt
+  * ...
 
 </details>
 
