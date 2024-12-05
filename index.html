@@ -5,9 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="author" content="Esmae Grapendaal">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	<title>Home | Porsche Nederland</title>
-
 	<link rel="stylesheet" href="./styles/style.css">
 	<link rel="icon" type="image/svg+xml" href="./images/svg/Porsche-Crest.svg">
 	<script src="./scripts/script.js" defer></script>
@@ -15,46 +13,118 @@
 
 <body>
 	<header>
-		<section>
-			<img src="./images/svg/menu-lines.svg" alt="menu icon">
-			<p>Menu</p>
-		</section>
-		<section>
-			<img src="./images/svg/Porsche-Crest.svg" alt="Porsche logo">
-		</section>
-		<section>
-			<img src="./images/svg/user.svg" alt="person icon">
-		</section>
+		<button aria-hidden="true"><img src="./images/svg/menu-lines.svg" alt="menu icon">Menu</button>
+		<nav>
+			<ul>
+				<li>
+					<button aria-hidden="true">
+						<img src="./images/svg/close.svg" alt="sluit icon">
+					</button>
+				</li>
+				<li>
+					<a href="porsche-24.html">Modellen</a>
+				</li>
+				<li>
+					<a href="porsche-24.html">Advies & aankoop</a>
+				</li>
+				<li>
+					<a href="porsche-24.html">Shop</a>
+				</li>
+				<li>
+					<a href="porsche-24.html">Services</a>
+				</li>
+				<li>
+					<button aria-hidden="true">Beleven</button>
+					<img src="./images/svg/arrow-head-right.svg" alt="navigeer icon">
+					<ul class="submenu">
+						<li>
+							<button aria-hidden="true">
+								<img src="./images/svg/arrow-left.svg" alt="terug icon">
+							</button>
+						</li>
+						<li>
+							<a href="porsche-24.html">Porsche 24</a>
+						</li>
+						<li>
+							<a href="porsche-24.html">Christophorus - Het Porsche magazine</a>
+						</li>
+						<li>
+							<a href="porsche-24.html">Porsche Advanced Driver Training</a>
+						</li>
+						<li>
+							<a href="porsche-24.html">Porsche Track Experience</a>
+						</li>
+						<li>
+							<a href="porsche-24.html">Porsche Motorsport</a>
+						</li>
+						<li>
+							<a href="porsche-24.html">Porsche Travel Club</a>
+						</li>
+						<li>
+							<a href="porsche-24.html">Porsche Clubs</a></li>
+						<li>
+							<a href="porsche-24.html">Porsche Kids Corner</a>
+						</li>
+						<li>
+							<a href="porsche-24.html">Museum bezoeken</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="porsche-24.html">Dealer</a>
+				</li>
+				<li>
+					<a href="porsche-24.html">My Porsche</a>
+				</li>
+			</ul>
+		</nav>
+		<img src="./images/svg/Porsche-Crest.svg" alt="Porsche logo">
+		<img src="./images/svg/user.svg" alt="person icon">
 	</header>
 
 	<main class="home-pagina">
 		<h1 class="visually-hidden">Home | Porsche Nederland</h1>
-		<section id="home-hero-slider" class="heroCarrousel" aria-label="Carrousel met Porsche modellen" tabIndex="-1"> <!-- Bron: https://codepen.io/shooft/pen/yLKjzWa  -->
+		<section id="home-hero-slider" class="hero-carrousel" aria-label="Carrousel met Porsche modellen" tabIndex="-1"> <!-- Bron: https://codepen.io/shooft/pen/yLKjzWa -->
 			<ul>
 				<li id="porsche-taycan-gts">
-					<img src="/images/hero-porsche-taycan-gts.jpg" alt="A woman standing in front of a shadegreen metallic Taycan in a modern setting."/>
-					<div class="hero-text">
+					<img src="./images/hero-porsche-taycan-gts.jpg" alt="A woman standing in front of a shadegreen metallic Taycan in a modern setting.">
+					<div class="hero-tekst">
 						<h2 class="visually-hidden">Porsche Taycan GTS</h2>
 						<h3>Overfeel.</h3>
-						<p>Experience the thrill of electric performance.</p>
+						<p>Ontdek de nieuwe Taycan GTS.</p>
 					</div>
 				</li>
 				<li id="porsche-911-carrera-t">
-					<img src="/images/hero-porsche-911-carrera-t.jpg" alt="Porsche 911 Carrera T in White. Side view."/>
-					<div class="hero-text">
+					<img src="./images/hero-porsche-911-carrera-t.jpg" alt="Porsche 911 Carrera T in White. Side view.">
+					<div class="hero-tekst">
 						<h2 class="visually-hidden">Porsche 911 Carrera T</h2>
 						<h3>The one and always.</h3>
 						<p>De nieuwe 911 Carrera T.</p>
 					</div>
 				</li>
 				<li id="porsche-panamera">
-					<img src="/images/hero-porsche-panamera.jpg" alt="Porsche - Choose boldly. - De nieuwe Panamera."/>
+					<img src="./images/hero-porsche-panamera.jpg" alt="Porsche - Choose boldly. - De nieuwe Panamera.">
+					<div class="hero-tekst">
+						<h2 class="visually-hidden">Porsche Panamera</h2>
+						<h3>Choose boldly.</h3>
+						<p>De nieuwe Panamera.</p>
+					</div>
 				</li>
 				<li id="porsche-all-electric-macan">
-					<img src="/images/hero-porsche-all-electric-macan.jpg" alt="Rear shot of an Oak Green Metallic Neo Macan 4S standing in front of a lake with the mountains in the background."/>
+					<img src="./images/hero-porsche-all-electric-macan.jpg" alt="Rear shot of an Oak Green Metallic Neo Macan 4S standing in front of a lake with the mountains in the background.">
+					<div class="hero-tekst">
+						<h2 class="visually-hidden">Porsche all-electric Macan</h2>
+						<h3>Keep your essence.</h3>
+						<p>De nieuwe all-electric Macan.</p>
+					</div>
 				</li>
 				<li id="porsche-taycan">
-					<img src="/images/hero-porsche-taycan.jpg" alt="Shot of a purplesky metallic Taycan Turbo GT with Weissach package in front of a purple background"/>
+					<img src="./images/hero-porsche-taycan.jpg" alt="Shot of a purplesky metallic Taycan Turbo GT with Weissach package in front of a purple background">
+					<div class="hero-tekst">
+						<h2 class="visually-hidden">Porsche Taycan</h2>
+						<h3>Overfeel.</h3>
+						<p>De nieuwe Taycan.</p>
+					</div>
 				</li>
 			</ul>
 			
@@ -72,28 +142,27 @@
 		<section>
 			<h2>Modellen</h2>
 			<section>
-				<a href="https://www.porsche.com/netherlands/nl/models/718/">
+				<a href="porsche-24.html">
 					<img src="./images/modellen-porsche-718.jpg" alt="Porsche 718">
 					<h3>718</h3>
 				</a>
-				<a href="https://www.porsche.com/netherlands/nl/models/911/">
+				<a href="porsche-24.html">
 					<img src="./images/modellen-porsche-911.jpg" alt="Porsche 911">
 					<h3>911</h3>
 				</a>
-				<a href="https://www.porsche.com/netherlands/nl/models/taycan/">
+				<a href="porsche-24.html">
 					<img src="./images/modellen-porsche-taycan.jpg" alt="Porsche Taycan">
 					<h3>Taycan</h3>
 				</a>
-				<a href="https://www.porsche.com/netherlands/nl/models/panamera/">
+				<a href="porsche-24.html">
 					<img src="./images/modellen-porsche-panamera.jpg" alt="Porsche Panamera">
 					<h3>Panamera</h3>
 				</a>
-				<a href="https://www.porsche.com/netherlands/nl/models/macan/">
+				<a href="porsche-24.html">
 					<img src="./images/modellen-porsche-macan.jpg" alt="Porsche Macan">
 					<h3>Macan</h3>
-					</article>
 				</a>
-				<a href="https://www.porsche.com/netherlands/nl/models/cayenne/">
+				<a href="porsche-24.html">
 					<img src="./images/modellen-porsche-cayenne.jpg" alt="Porsche Cayenne">
 					<h3>Cayenne</h3>
 				</a>
@@ -102,130 +171,185 @@
 
 		<section class="container">
 			<h2>Actueel</h2>
-			<section>
+			<section id="actueel-slider" class="actueel-carrousel" aria-label="Carrousel met de actualiteit van Porsche" tabIndex="-1">
 				<ul>
-					<li>
-						<a href="https://www.porsche.com/netherlands/nl/motorsportandevents/porsche24/">
-							<img src="images/actueel-porsche24.jpg" alt="Porsche24. Rijden wordt beloond.">
+					<li id="actueel-porsche24">
+						<a href="porsche-24.html">
+							<img src="./images/actueel-porsche24.jpg" alt="Porsche24. Rijden wordt beloond.">
 							<p>Porsche24 Rijden wordt beloond.</p>
 						</a>
 					</li>
-					<li>
-						<a href="https://www.porsche-shop.nl/lifestyle/">
-							<img src="images/actueel-porsche-lifestyle-collecties.jpg" alt="Porsche Lifestyle collecties.">
-							<p>Porsche Lifestyle collecties.</p>
+					<li id="actueel-porsche-lifestyle-collecties">
+						<a href="porsche-24.html">
+							<img src="./images/actueel-porsche-lifestyle-collecties.jpg" alt="Porsche Lifestyle collecties.">
+							<p> Porsche Lifestyle collecties.</p>
 						</a>
 					</li>
-					<li>
-						<a href="https://finder.porsche.com/nl/nl_NL/search/list">
-							<img src="images/actueel-porsche-aanbod.jpg" alt="Porsche - Bekijk ons aanbod nieuw & Approved.">
+					<li id="actueel-porsche-aanbod">
+						<a href="porsche-24.html">
+							<img src="./images/actueel-porsche-aanbod.jpg" alt="Porsche - Bekijk ons aanbod nieuw & Approved.">
 							<p>Bekijk ons aanbod nieuw & Approved.</p>
 						</a>
 					</li>
-					<li>
-						<a href="http://nieuws.porsche.nl/">
-							<img src="images/actueel-porsche-newsroom.jpg" alt="Nieuw(s): de Porsche newsroom.">
+					<li id="actueel-porsche-newsroom">
+						<a href="porsche-24.html">
+							<img src="./images/actueel-porsche-newsroom.jpg" alt="Nieuw(s): de Porsche newsroom.">
 							<p>Nieuw(s): de Porsche newsroom.</p>
 						</a>
 					</li>
 				</ul>
+				
+				<nav>
+					<ul>
+						<li><a href="#actueel-porsche24" aria-label="Ga naar Porsche24"></a></li>
+						<li><a href="#actueel-porsche-lifestyle-collecties" aria-label="Ga naar Porsche Lifestyle collecties"></a></li>
+						<li><a href="#actueel-porsche-aanbod" aria-label="Ga naar Porsche aanbod"></a></li>
+						<li><a href="#actueel-porsche-newsroom" aria-label="Ga naar Porsche newsroom"></a></li>
+					</ul>
+				</nav>
 			</section>
-			
 		</section>
 
 		<section class="container">
 			<h2>Service & Advies</h2>
-			<section>
-				<a href="https://www.porsche.com/netherlands/nl/models/?compare=">
-					<img src="images/service_advies-porsche-vergelijk.jpg" alt="Porsche - Vergelijk">
+			<div>
+				<a href="porsche-24.html">
+					<img src="./images/service_advies-porsche-vergelijk.jpg" alt="Porsche - Vergelijk">
 					<h3>Vergelijk</h3>
 				</a>
-				<a href="https://www.porsche.com/netherlands/nl/dealersearch/">
-					<img src="images/service_advies-porsche-dealeroverzicht.jpg" alt="Porsche - Dealeroverzicht">
+				<a href="porsche-24.html">
+					<img src="./images/service_advies-porsche-dealeroverzicht.jpg" alt="Porsche - Dealeroverzicht">
 					<h3>Dealeroverzicht</h3>
 				</a>
-				<a href="https://finder.porsche.com/nl/nl_NL/search/list">
-					<img src="images/service_advies-porsche-occasions.jpg" alt="Porsche - Occasions">
+				<a href="porsche-24.html">
+					<img src="./images/service_advies-porsche-occasions.jpg" alt="Porsche - Occasions">
 					<h3>Occasions</h3>
 				</a>
-			</section>
+			</div>
 		</section>
 	</main>
 
 	<footer>
-		<details>
-			<summary>Koopadvies</summary>
-			<nav>
+		<nav>
+			<details>
+				<summary><h3>Koopadvies</h3></summary>
+				<nav>
+					<ul>
+						<li>
+							<a href="porsche-24.html">Vergelijk modellen</a>
+						</li>
+						<li>
+							<a href="porsche-24.html">Serviceprijzen</a>
+						</li>
+						<li>
+							<a href="porsche-24.html">Diplomatic Sales</a>
+						</li>
+						<li>
+							<a href="porsche-24.html">WLTP</a>
+						</li>
+					</ul>
+				</nav>
+			</details>
+			<details>
+				<summary><h3>Online services</h3></summary>
+				<nav>
+					<ul>
+						<li>
+							<a href="porsche-24.html">Aanmelden e-mailnieuwsbrief</a>
+						</li>
+						<li>
+							<a href="porsche-24.html">Afmelden voor informatie-updates</a>
+						</li>
+						<li>
+							<a href="porsche-24.html">Porsche Kids Corner</a>
+						</li>
+					</ul>
+				</nav>
+			</details>
+			<details>
+				<summary><h3>Achter de schermen</h3></summary>
+				<nav>
+					<ul>
+						<li>
+							<a href="porsche-24.html">Porsche Autosport</a>
+						</li>
+						<li>
+							<a href="porsche-24.html">Porsche Travel Club</a>
+						</li>
+					</ul>
+				</nav>
+			</details>
+			<details>
+				<summary><h3>Over Porsche</h3></summary>
+				<nav>
+					<ul>
+						<li>
+							<a href="porsche-24.html">Overzicht</a>
+						</li>
+						<li>
+							<a href="porsche-24.html">Pon Porsche Import</a>
+						</li>
+						<li>
+							<a href="porsche-24.html">Porsche Centra</a>
+						</li>
+						<li>
+							<a href="porsche-24.html">Werken bij Porsche</a>
+						</li>
+						<li>
+							<a href="porsche-24.html">Contact & Informatie</a>
+						</li>
+						<li>
+							<a href="porsche-24.html">Pers</a>
+						</li>
+					</ul>
+				</nav>
+			</details>
+			<nav class="socials">
+				<h4>Volg Porsche</h4>
 				<ul>
 					<li>
-						<a href="https://www.porsche.com/international/compare/?model-range=">Vergelijk modellen</a>
+						<img src="./images/svg/instagram.svg" alt="Instagram Logo">
 					</li>
 					<li>
-						<a href="https://www.porsche.com/netherlands/nl/service/maintenance/prices/">Serviceprijzen</a>
+						<img src="./images/svg/facebook.svg" alt="Facebook Logo">
 					</li>
 					<li>
-						<a href="https://www.porsche.com/netherlands/nl/service/diplomaticsales/">Diplomatic Sales</a>
+						<img src="./images/svg/youtube.svg" alt="YouTube Logo">
 					</li>
 					<li>
-						<a href="https://www.porsche.com/netherlands/nl/service/maintenance/wltp/">WLTP</a>
+						<img src="./images/svg/x-twitter.svg" alt="X Logo">
+					</li>
+					<li>
+						<img src="./images/svg/pinterest.svg" alt="Pinterest Logo">
+					</li>
+					<li>
+						<img src="./images/svg/linkedin.svg" alt="LinkedIn Logo">
 					</li>
 				</ul>
 			</nav>
-		</details>
-		<details>
-			<summary>Online services</summary>
-			<nav>
-				<ul>
-					<li>
-						<a href="https://www.porsche.com/netherlands/nl/dialogue/newsletter/">Aanmelden e-mailnieuwsbrief</a>
-					</li>
-					<li>
-						<a href="https://formulieren.porsche.nl/#/abonnee/afmelden">Afmelden voor informatie-updates</a>
-					</li>
-					<li>
-						<a href="https://www.porsche.com/netherlands/nl/kidscorner/">Porsche Kids Corner</a>
-					</li>
-				</ul>
-			</nav>
-		</details>
-		<details>
-			<summary>Achter de schermen</summary>
-			<nav>
-				<ul>
-					<li>
-						<a href="https://www.porsche.com/netherlands/nl/motorsportandevents/motorsportnetherlands/">Porsche Autosport</a>
-					</li>
-					<li>
-						<a href="https://www.porsche.com/netherlands/nl/motorsportandevents/travelclubnetherlands/">Porsche Travel Club</a>
-					</li>
-				</ul>
-			</nav>
-		</details>
-		<details>
-			<summary>Achter de schermen</summary>
-			<nav>
-				<ul>
-					<li>
-						<a href="https://www.porsche.com/netherlands/nl/aboutporsche/">Overzicht</a>
-					</li>
-					<li>
-						<a href="https://www.porsche.com/netherlands/nl/aboutporsche/ponporscheimport/">Pon Porsche Import</a>
-					</li>
-					<li>
-						<a href="https://www.porsche.com/netherlands/nl/aboutporsche/dealersearch/">Porsche Centra</a>
-					</li>
-					<li>
-						<a href="'https://werkenbijporsche.nl/">Werken bij Porsche</a>
-					</li>
-					<li>
-						<a href="https://www.porsche.com/netherlands/nl/dialogue/form/">Contact & Informatie</a>
-					</li>
-					<li>
-						<a href="http://nieuws.porsche.nl/">Pers</a>
-					</li>
-				</ul>
-			</nav>
-		</details>
+		</nav>
+		<div>
+			<h4>Kies een ander land/regio:</h4>
+			<div>
+				<select>
+					<option selected disabled hidden>Selecteer een regio</option> <!-- Bron: https://aurisecreative.com/blog/2023/10/how-to-add-a-placeholder-to-a-select-field/ -->
+					<option value="c1">North America</option>
+					<option value="c2">Latin America</option>
+					<option value="c3">Europe</option>
+					<option value="c4">Middle East</option>
+					<option value="c5">Africa</option>
+					<option value="c6">Asia</option>
+					<option value="c7">Australia/Oceania</option>
+				</select>
+				<select>
+					<option selected hidden>Selecteer een land/regio</option>
+				</select>
+			</div>
+
+			<p>© 2024 Porsche Nederland. <a href="porsche-24.html">Copyright & Privacy.</a> <a href="porsche-24.html">Cookies.</a> <a href="porsche-24.html">Cookie instellingen.</a> <a href="porsche-24.html">Verkoopinformatie.</a> <a href="porsche-24.html">Open Source Software Notice.</a> <a href="porsche-24.html">Whistleblower System.</a> <a href="porsche-24.html">Disclaimer.</a></p>
+
+			<p>* De getoonde prijzen zijn de consumentenadviesprijs (dit is inclusief btw, bpm, rijklaarmaakkosten, recycling- en beheerbijdrage en leges). Lees voor meer informatie de algemene <a href="porsche-24.html">verkoopinformatie</a>. Aan deze prijzen kunnen geen rechten worden ontleend. De getoonde prijzen zijn dagprijzen inclusief geldende belastingregels.<br><br>** De opgegeven verbruiks- en emissiewaarden zijn bepaald volgens de wettelijk voorgeschreven meetprocedure. Sinds 1 januari 2022 geldt alleen nog de WLTP-testcyclus en wordt de NEDC- testcyclus niet meer gebruikt. Voor auto’s die na die datum een typegoedkeuring hebben gekregen, worden daarom alleen WLTP-waarden genoemd.<br><br>De waarden hebben geen betrekking op één bepaalde auto en zijn ook niet gekoppeld aan ons aanbod, maar dienen alleen om een vergelijking te kunnen maken tussen de verschillende uitvoeringen. Door opties en accessoires (bijvoorbeeld dakdragers, grotere wielen, etc.) kunnen relevante parameters zoals het gewicht, de rolweerstand en aerodynamica veranderen. Deze kunnen het brandstofverbruik, het stroomverbruik, de CO₂-emissie en de rijprestaties van een auto beïnvloeden. Ook externe factoren, bijvoorbeeld het weer en het verkeer, en de eigen rijstijl hebben hier effect op. Door de meer realistische testomstandigheden van de WLTP-cyclus zijn het gemeten brandstofverbruik en de CO₂-emissiewaarden in veel gevallen hoger dan die volgens de NEDC-cyclus. Dit kan sinds 1 september 2018 resulteren in fiscale wijzigingen, bijvoorbeeld in de motorrijtuigenbelasting en bijtelling. Meer informatie over de verschillen tussen WLTP en NEDC vindt u op <a href="porsche-24.html">https://www.porsche.com/netherlands/nl/service/maintenance/wltp/</a><br><br>*** Belangrijke informatie over de volledig elektrische Porsche modellen kan <a href="porsche-24.html">hier</a> gevonden worden.</p>
+		</div>
 	</footer>
 </body>
 

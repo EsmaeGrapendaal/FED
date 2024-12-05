@@ -19,6 +19,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	font-family: "Porsche Next","Arial Narrow",sans-serif;
 }
 
 body {
@@ -43,6 +44,14 @@ img {
 	width: 1px;
 }
 
+.home-pagina h2 {
+	padding: 1em 1.5em;
+}
+
+.container h2 {
+	padding: 1em 0;
+}
+
 
 
 
@@ -56,11 +65,10 @@ img {
 	-moz-hyphens: auto;
 	-ms-hyphens: auto;
 
-	font-family: "Porsche Next","Arial Narrow",sans-serif;
-
 	--color-black-text: #000000;
 	--color-white-text: #FFFFFF;
 	--color-background: #FFFFFF;
+	--color-footer-background: #191F22;
 }
 
 
@@ -76,60 +84,127 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	background-color: var(--color-background);
-	padding: 1em 2em;
+	padding: 1.5em 2em;
+	width: 100%;
+	position: relative;
 }
 
-header section {
+header button {
+	color: var(--color-black-text);
 	display: flex;
 	align-items: center;
+	background: none;
+	border: none;
+	outline: none;
+	font-size: 1em;
 }
 
-header > section:nth-of-type(1) {
-	flex: 2;
-}
-
-header > section:nth-of-type(2) {
-	flex: 1;
-	justify-content: center;
-}
-
-header > section:nth-of-type(3) {
-    flex: 2;
-    justify-content: end;
-}
-
-header > section:nth-of-type(1) img, header > section:nth-of-type(3) img {
-	width: 1.5em;
-}
-
-header img {
+header > img {
 	width: auto;
 	max-width: 2.5em;
 }
 
-header p {
-    margin-left: 0.5em;
-    color: var(--color-black-text);
+header > img:nth-of-type(1) {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+header > button img, header > img:nth-of-type(2) {
+	width: 1.5em;
+}
+
+header nav, .submenu {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	transform: translate(-100%, 0%);
+	transition: .3s;
+}
+
+header a {
+	color: var(--color-black-text);
+	text-decoration: none;
+}
+
+.toon-menu {
+	transform: translate(0%, 0%);
+	z-index: 2;
+	background-color: white;
+	list-style: none;
+	padding: 0 1.6875rem;
+	font-size: 1.5em;
+}
+
+.toon-menu ul {
+	list-style: none;
+	margin-top: 3em;
+}
+
+.toon-menu ul li:first-child:not(.toon-submenu li:first-child) {
+	position: absolute;
+	right: 1em;
+	top: 1em;
+}
+
+.toon-menu ul li {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.toon-menu ul li img {
+	width: 1em;
+}
+
+.toon-menu button:not(.toon-menu li:nth-of-type(6) button) {
+	width: 1em;
+}
+
+.toon-menu ul li:not(.toon-menu ul li:nth-of-type(-n+2), .toon-submenu li) {
+	margin-top: 2.25rem;
+}
+
+.toon-submenu {
+	transform: translate(0%, 0%);
+	z-index: 3;
+	background-color: white;
+	list-style: none;
+	padding: 0 1.6875rem;
+	font-size: 0.85em;
+}
+
+.toon-submenu li:not(.toon-submenu li:nth-of-type(-n+2)) {
+	margin-top: 1em;
+}
+
+.toon-submenu li:first-child {
+	position: absolute;
+	left: 1em;
+	top: -1.7em;
 }
 
 
 /********** HERO **********/
 /* Bron: https://codepen.io/shooft/pen/yLKjzWa */
-.heroCarrousel {
-	--heroCarrouselMainColor: #c8cacb;
-	--heroCarrouselAccentColor: #d5001c;
+.hero-carrousel {
+	--hero-carrouselMainColor: #c8cacb;
+	--hero-carrouselAccentColor: #d5001c;
 	position: relative;
 	outline: none;
 }
 
 @media (prefers-color-scheme: dark) {
-  .heroCarrousel {
-    --heroCarrouselMainColor:#c8cacb;
-    --heroCarrouselAccentColor:#d5001c;
-  }
+	.hero-carrousel {
+		--hero-carrouselMainColor: #c8cacb;
+		--hero-carrouselAccentColor: #d5001c;
+	}
 }
 
-.heroCarrousel > ul {
+.hero-carrousel > ul {
 	list-style: none;
 	display: flex;
 	overflow: hidden;
@@ -140,17 +215,18 @@ header p {
 	scrollbar-width: none; /* voor Firefox */
 }
 
-.heroCarrousel > ul::-webkit-scrollbar {
+.hero-carrousel > ul::-webkit-scrollbar {
 	display: none; /* voor Chrome, Safari en Edge*/
 }
 
-.heroCarrousel > ul li {
+.hero-carrousel > ul li:not(.hero-carrousel nav ul li){
 	flex-basis: 100%;
 	flex-shrink: 0;
 	scroll-snap-align: center;
+	position: relative;
 }
 
-.heroCarrousel > ul li > img {
+.hero-carrousel > ul li > img {
 	display: block;
 	width: 100%;
 	height: 64vh;
@@ -158,7 +234,7 @@ header p {
 	object-fit: cover;
 }
 
-.heroCarrousel nav ul {
+.hero-carrousel nav ul {
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -174,46 +250,66 @@ header p {
 	list-style: none;
 }
 
-.heroCarrousel > nav li {
+.hero-carrousel > nav li {
 	aspect-ratio: 1 / 1;
 }
 
-.heroCarrousel > nav a {
+.hero-carrousel > nav a {
 	display: block;
 	width: 0.5em;
 	height: 0.5em;
 	text-decoration: none;
-	color: var(--heroCarrouselAccentColor);
-	background-color: var(--heroCarrouselMainColor);
+	color: var(--hero-carrouselAccentColor);
+	background-color: var(--hero-carrouselMainColor);
 	border-radius: 50%;
 	outline: none;
 	transition: 0.5s;
 }
 
-.heroCarrousel > nav a:hover,
-.heroCarrousel > nav a:focus {
-	color: var(--heroCarrouselAccentColor);
+.hero-carrousel > nav a:hover,
+.hero-carrousel > nav a:focus {
+	color: var(--hero-carrouselAccentColor);
 }
 
-.heroCarrousel > nav a.current {
+.hero-carrousel > nav a.current {
 	background-color: currentColor;
 }
 
-.hero-text {
+.hero-tekst {
 	position: absolute;
 	color: var(--color-white-text);
 	text-align: left;
 	z-index: 1;
 }
 
-#porsche-taycan-gts .hero-text, #porsche-911-carrera-t .hero-text, #porsche-all-electric-macan .hero-text, #porsche-taycan .hero-text {
+#porsche-taycan-gts .hero-tekst, #porsche-911-carrera-t .hero-tekst, #porsche-all-electric-macan .hero-tekst, #porsche-taycan .hero-tekst {
 	left: 2em;
 	bottom: 3em;
 }
 
-#porsche-panamera .hero-text {
-	left: 2em;
-	top: 3em;
+#porsche-panamera .hero-tekst {
+	left: 7%;
+	top: 2em;
+}
+
+.hero-carrousel h3 {
+	font-size: 2em;
+	font-weight: 600;
+	line-height: 1;
+}
+
+.hero-carrousel h3::before {
+	content: url("../images/svg/chevron-right-red.svg");
+	display: inline-block;
+	width: 1em;
+	vertical-align: middle;
+	margin-left: -1em;
+}
+
+
+.hero-carrousel p {
+	font-size: 1.25em;
+	font-weight: 600;
 }
 
 
@@ -240,22 +336,310 @@ header p {
 	bottom: 1rem;
 	left: 1rem;
 	color: var(--color-white-text);
+	font-size: 1.25em;
+}
+
+.home-pagina > section:nth-of-type(2) section a h3::before {
+	content: url("../images/svg/chevron-right-red.svg");
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	vertical-align: middle;
 }
 
 
-/* Actueel */
-.home-pagina > section:nth-of-type(3) ul {
-	list-style: none;
+/********** ACTUEEL **********/
+.actueel-carrousel a {
+	text-decoration: none;
+	color: var(--color-black-text);
 }
 
-.home-pagina > section:nth-of-type(3) img {
-	height: 20em;
+.actueel-carrousel a p::before {
+	content: url("../images/svg/chevron-right-red.svg");
+	display: inline-block;
+	width: 1em;
+	vertical-align: middle;
+}
+
+.actueel-carrousel li:nth-of-type(2) p::before {
+	content: url("../images/svg/new-tab.svg");
+	display: inline-block;
+	width: 1em;
+	vertical-align: middle;
+}
+
+.actueel-carrousel img {
+	height: 15em;
 	object-position: center;
 	object-fit: cover;
 }
 
-/* Footer */
-/* footer {
+.actueel-carrousel {
+	--actueel-carrouselMainColor: #313639;
+	--actueel-carrouselAccentColor: #d5001c;
+	position: relative;
+	outline: none;
+}
+
+@media (prefers-color-scheme: dark) {
+	.actueel-carrousel {
+		--actueel-carrouselMainColor: #313639;
+		--actueel-carrouselAccentColor: #d5001c;
+	}
+}
+
+.actueel-carrousel > ul {
+	list-style: none;
+	display: flex;
+	overflow: hidden;
+	scroll-snap-type: inline mandatory;
+	scroll-behavior: smooth;
+	-webkit-overflow-scrolling: touch; /* voor iOS*/
+	-ms-overflow-style: none; /* voor IE */
+	scrollbar-width: none; /* voor Firefox */
+}
+
+.actueel-carrousel > ul::-webkit-scrollbar {
+	display: none; /* voor Chrome, Safari en Edge*/
+}
+
+.actueel-carrousel > ul li {
+	flex-basis: 100%;
+	flex-shrink: 0;
+	scroll-snap-align: center;
+	position: relative;
+}
+
+.actueel-carrousel nav ul {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	padding: 1em 0;
+	text-align: center;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	gap: 1em;
+	list-style: none;
+}
+
+.actueel-carrousel > nav li {
+	aspect-ratio: 1 / 1;
+}
+
+.actueel-carrousel > nav a {
+	display: block;
+	width: 0.5em;
+	height: 0.5em;
+	text-decoration: none;
+	color: var(--actueel-carrouselAccentColor);
+	background-color: var(--actueel-carrouselMainColor);
+	border-radius: 50%;
+	outline: none;
+	transition: 0.5s;
+}
+
+.actueel-carrousel > nav a:hover,
+.actueel-carrousel > nav a:focus {
+	color: var(--actueel-carrouselAccentColor);
+}
+
+.actueel-carrousel > nav a.current {
+	background-color: currentColor;
+}
+
+/********** SERVICE & ADVIES **********/
+.home-pagina > section:nth-of-type(4) div {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-} */
+	grid-template-columns: 1fr 1fr;
+}
+
+.home-pagina > section:nth-of-type(4) div a {
+	height: 11em;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+.home-pagina > section:nth-of-type(4) div a img {
+	height: 100%;
+	object-fit: cover;
+}
+
+.home-pagina > section:nth-of-type(4) div a h3 {
+	position: absolute;
+	bottom: 1.5em;
+	left: 0.5em;
+	font-size: 1.25em;
+	color: var(--color-white-text);
+}
+
+.home-pagina > section:nth-of-type(4) div a h3::before {
+	content: url("../images/svg/chevron-right-red.svg");
+	display: inline-block;
+	width: 1em;
+	height: 1.2em;
+	vertical-align: middle;
+}
+
+.home-pagina > section:nth-of-type(4) div a:nth-child(1) {
+	grid-column: 1 / span 2;
+	grid-row: 1 / span 1;
+}
+
+.home-pagina > section:nth-of-type(4) div a:nth-child(2) {
+	grid-column: 1 / span 1; /* Tweede a zit in de eerste kolom */
+	grid-row: 2 / span 1; /* Zit op de tweede rij */
+}
+
+.home-pagina > section:nth-of-type(4) div a:nth-child(3) {
+	grid-column: 2 / span 1; /* Derde a zit in de tweede kolom */
+	grid-row: 2 / span 1; /* Zit op de tweede rij */
+}
+
+
+/********** FOOTER **********/
+footer > nav {
+	padding: 2em;
+}
+
+summary {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #c8cacb;
+	padding: 0.75em 0;
+}
+
+details:first-child {
+	border-top: 1px solid #c8cacb;
+}
+
+summary::after {
+	content: url("../images/svg/chevron-down.svg");
+	width: 1em;
+	height: 1em;
+	align-self: center;
+}
+
+details[open] summary::after {
+	content: url("../images/svg/chevron-up.svg");
+}
+
+footer nav details nav ul {
+	list-style: none;
+}
+
+footer nav details nav ul li a {
+	color: var(--color-black-text);
+	text-decoration: none;
+	line-height: 3em;
+}
+
+.socials {
+	margin-top: 2em;
+}
+
+.socials h4 {
+	color: #959899;
+	font-size: 1.125em;
+}
+
+.socials ul {
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;
+	gap: 0.5em;
+}
+
+.socials ul li {
+	background-color: #313639;
+	padding: 0.7em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	aspect-ratio: 1 / 1;
+}
+
+.socials ul img {
+	width: 1.8em;
+	height: 1.8em;
+	filter: invert(100%);
+	-webkit-filter: invert(100%); /* Chrome en Safaris */
+}
+
+footer > div:nth-of-type(1) {
+	background-color: var(--color-footer-background);
+	color: var(--color-white-text);
+	padding: 1.25em 1.5em 4em 1.5em;
+}
+
+footer > div:nth-of-type(1) div {
+	display: flex;
+	flex-direction: column;
+	gap: 0.8em;
+	margin-bottom: 1.875em;
+}
+
+footer > div:nth-of-type(1) select {
+	font-size: 1em;
+	padding: 0.8em;
+	background-color: #313639;
+	color: var(--color-white-text);
+	border: none;
+}
+
+footer > div:nth-of-type(1) select:last-of-type {
+	color: #999999;
+}
+
+footer > div:nth-of-type(1) a {
+	color: var(--color-white-text);
+	text-decoration: underline;
+}
+
+/********** PORSCHE 24 PAGINA **********/
+.porsche-24-pagina section:nth-of-type(1) {
+	position: relative;
+	outline: none;
+}
+
+.porsche-24-pagina section:nth-of-type(1) img {
+	display: block;
+	width: 100%;
+	aspect-ratio: 1 / 1;
+	object-position: center center;
+	object-fit: cover;
+}
+
+.porsche-tekst {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 1;
+	color: var(--color-white-text);
+	text-align: left;
+	padding: 2em;
+}
+
+.porsche-24-pagina section:nth-of-type(1)::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, #1f1f1fe6, #1f1f1fe6 20%,#1f1f1fd9, #202020c4, #212121aa, #2222228e, #23232371,#24242455, #2525253b, #26262626, #27272715, #27272709,#27272702, #27272700);
+	opacity: .5;
+}
+
+.porsche-tekst h1 {
+	font-weight: 400;
+	font-size: 2em;
+}
+
+.porsche-tekst p {
+	font-size: 1.125em;
+}
+
