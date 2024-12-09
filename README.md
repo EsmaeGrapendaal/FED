@@ -190,7 +190,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Voortgang 3 (week 4)
 
-<details open>
+<details>
   <summary>Uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
@@ -227,7 +227,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Eindgesprek (week 5)
 
-<details>
+<details open>
   <summary>Uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
@@ -249,16 +249,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Bronnenlijst
 
-<details open>
+  1. [Bron voor carrousels](https://codepen.io/shooft/pen/yLKjzWa)
+  2. [Bron voor placeholder select veld](https://aurisecreative.com/blog/2023/10/how-to-add-a-placeholder-to-a-select-field/)
+  3. [Bron voor hamburger menu](https://codepen.io/shooft/pen/VwJXNEg)
+  4. [Bron voor scroll-margin-top](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin-top)
+  5. ChatGPT prompt: "Kan je ook bepaalde functions creeren op bepaalde pagina's met javascript? Ik krijg anders errors"
+
+<details>
   <summary>continu bijhouden terwijl je werkt</summary>
 
   - Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg). 
   - Nb. ChatGpT en andere AI horen er ook bij.
   - Nb. Vermeld de bronnen ook in je code.
-
-  1. [Bron voor carrousels](https://codepen.io/shooft/pen/yLKjzWa)
-  2. [Bron voor placeholder select veld](https://aurisecreative.com/blog/2023/10/how-to-add-a-placeholder-to-a-select-field/)
-  3. [Bron voor hamburger menu](https://codepen.io/shooft/pen/VwJXNEg)
-  4. 
-
 </details>
