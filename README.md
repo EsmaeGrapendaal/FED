@@ -37,7 +37,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   [Porsche24. | Porsche Nederland](https://www.porsche.com/netherlands/nl/motorsportandevents/porsche24/ "Porsche24. pagina")
-  <img src="readme-images/Porsche24-porsche-nederland.png" width="375px" alt="Porsche24. pagina van de website van Porsche Nederland">
+  <img src="readme-images/Porsche24-Porsche-Nederland.png" width="375px" alt="Porsche24. pagina van de website van Porsche Nederland">
 
 </details>
 
@@ -95,13 +95,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>Uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### De hele pagina:
-  <img src="readme-images/Breakdownschets-Home-Porsche-Nederland.jpg" width="375px" alt="breakdown van de hele home pagina">
+  <img src="readme-images/Breakdownschets-Home-Porsche-Nederland.jpg" width="375px" alt="Breakdown van de hele home pagina">
+  
+  (Gemaakt in week 1)
 
   ### Dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### Wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/Breakdownschets-Menu-Porsche-Nederland.jpg" width="375px" alt="Breakdown van menu">
 
 </details>
 
@@ -185,6 +184,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+  (Toegankelijkheidstest als laatste gedaan)
+  - Menu wordt gelijk meegepakt (niet handig gedaan, weet niet hoe ik dit kan oplossen)
+  - Alle elementen worden nu opgenoemd, dat is erg vervelend.
+
+  #### WCAG checklist:
+  - **Uiterlijk**
+      - Dark mode wordt nu ondersteund
+      - Tekstgrootte wordt nu ondersteund (niet alle tekst gedaan, paar headings en p's gedaan).
+  - **Animaties**
+      - Animaties zijn nu uitgeschakeld als reduced-motion is ingeschakeld.
+
 </details>
 
 
@@ -217,10 +227,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Maak menu tweede pagina wel sticky en dan nog niet dat het veranderd
+  - Maak een nieuwe javascript aan voor menu tweede pagina
+  - Surface plane onderdelen zijn goed
+  - Met video/geluid wel wat leuks doen > denk aan: een knop indrukken en dan een geluidje > dit is al beter dan een regel html met video en src
 
 </details>
 
@@ -231,19 +241,32 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>Uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
 
+  Uitkomst home pagina:
+
+  <img src="readme-images/Eigen-werk-Home.png" width="375px" alt="Uitkomst eigen werk home pagina van de website van Porsche Nederland">
+
+  Uitkomst Porsche24 pagina:
+
+  <img src="readme-images/Eigen-werk-Porsche24.png" width="375px" alt="Uitkomst eigen werk Porsche24 pagina van de website van Porsche Nederland">
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/Geleerd-Carrousel1.png" width="375px" alt="top">
+  
+  Ik heb geleerd hoe ik een carrousel kan maken, ik heb meerdere soorten gemaakt ook nog twee op de Porsche24 pagina (zie hieronder).
+  
+  <img src="readme-images/Geleerd-Carrousel2.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/Lastig-Porsche-Video-Carrousel.png" width="375px" alt="bummer">
+
+  Ik vond het erg lastig om een video te koppelen met JavaScript button. Ik heb nu alleen afspelen en pauzeren kunnen doen. En het stijlen van de video wat niet gelukt helaas. (Hierboven zie je hoe het op de Porsche webiste is en hieronder hoe ik het heb).
+
+  <img src="readme-images/Lastig-Video-Carrousel.png" width="375px" alt="bummer">
+
 </details>
 
 
@@ -254,6 +277,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   3. [Bron voor hamburger menu](https://codepen.io/shooft/pen/VwJXNEg)
   4. [Bron voor scroll-margin-top](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin-top)
   5. ChatGPT prompt: "Kan je ook bepaalde functions creeren op bepaalde pagina's met javascript? Ik krijg anders errors"
+  6. Bron: Bahaa Salaymeh (Zie script.js > Porsche24 pagina nav lijn) + ChatGPT prompt: Eerst had ik de code van Bahaa veranderd en toen aan ChatGPT gevraagd wat ik moest aanpassen om ervoor te zorgen dat hij de border-bottom switch van a naar a (.porsche-24-pagina main > nav ul li a)
+  7. [Bron voor Javascript video](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/play)
+
 
 <details>
   <summary>continu bijhouden terwijl je werkt</summary>

@@ -13,7 +13,6 @@ function openMenu() { // stap 3: voeg in de functie een class toe aan de nav
 	deNav.classList.add("toon-menu");
 }
 
-
 /********** Hoofdmenu sluiten **********/
 const sluitButton = document.querySelector("header nav button"); // stap 1 - zoek sluiten button op
 sluitButton.onclick = sluitMenu; // stap 2 - laat die button luisteren naar kliks
@@ -21,7 +20,6 @@ function sluitMenu() { // stap 3 - in de functie verwijder de class van de nav
 	let deNav = document.querySelector("header nav");
 	deNav.classList.remove("toon-menu");
 }
-
 
 /********** Hoofdmenu sluiten met escape **********/
 window.onkeydown = handleKeydown;
@@ -42,7 +40,6 @@ function openSubMenu() {
 	let deSubNav = document.querySelector("header nav ul li:nth-of-type(6) ul.submenu");
 	deSubNav.classList.add("toon-submenu");
 }
-
 
 /********** Submenu terug naar hoofdmenu **********/
 const terugButton = document.querySelector("header nav ul li:nth-of-type(6) ul.submenu li:first-of-type button");
@@ -667,10 +664,11 @@ if (window.location.pathname === "/porsche-24.html") {
 		})();
 }
 
+//////////
 
-/*********************************************************/
-/* Bron carrousel: https://codepen.io/shooft/pen/yLKjzWa */
-/*********************************************************/
+/*******************/
+/* Tekst vergroten */
+/*******************/
 const body = document.body;
 const tekstVergrotenButton = document.querySelector('.tekst-grootte');
 
@@ -684,3 +682,50 @@ function tekstGrootte(){
 		tekstVergrotenButton.textContent = "Tekst vergroten";
 	}
 }
+
+//////////
+
+/*****************************/
+/* Porsche24 pagina nav lijn */
+/*****************************/
+// Bron: Bahaa Salaymeh tijdens voortgangsgesprek geholpen + ChatGPT gevraagd of hij ervoor kon zorgen dat het aangepast wordt per a
+// ChatGPT prompt: Eerst had ik de code van Bahaa veranderd en toen aan ChatGPT gevraagd wat ik moest aanpassen om ervoor te zorgen dat hij de border-bottom switch van a naar a (.porsche-24-pagina main > nav ul li a)
+
+const navLijnen = document.querySelectorAll('#porsche24, #porsche24-levels, #download-de-app, #aftermovies, #veelgestelde-vragen');
+const links = document.querySelectorAll('.porsche-24-pagina main > nav ul li a');
+
+window.addEventListener('scroll', () => {
+	navLijnen.forEach((navLijn, index) => {
+		const rect = navLijn.getBoundingClientRect();
+		if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.	innerHeight / 2) {
+			links.forEach(link => link.style.borderBottom = 'none');
+			const kleur = navLijn.getAttribute('data-kleur');
+			if (kleur) {
+			    links[index].style.borderBottom = `2px solid ${kleur}`;
+			}
+		}
+	});
+});
+
+//////////
+
+/*************************************/
+/* Porsche24 pagina videos + knoppen */
+/*************************************/
+// Bron: https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/play
+const videos = document.querySelectorAll('.video-afspeler');
+const videoKnoppen = document.querySelectorAll('.afspelen-pauze-knop');
+
+videoKnoppen.forEach((videoKnop, index) => {
+	const video = videos[index];
+
+	videoKnop.addEventListener('click', () => {
+		if (video.paused) {
+			video.play();
+			videoKnop.textContent = 'Pauzeren';
+		} else {
+			video.pause();
+			videoKnop.textContent = 'Afspelen';
+		}
+	});
+});

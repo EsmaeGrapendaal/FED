@@ -944,12 +944,12 @@ footer h4:not(.porsche-24-pagina footer section:first-of-type h4) {
 	}
 }
 
-
 .tekst-grootte {
 	position: sticky;
 	top: 0;
 	right: 0;
 	z-index: 99;
+	padding: 0.5em;
 }
 
 .porsche-24-pagina .tekst-grootte {
@@ -958,4 +958,19 @@ footer h4:not(.porsche-24-pagina footer section:first-of-type h4) {
 
 .tekst-groot main h2 {
 	font-size: 2em;
+}
+
+.tekst-groot p {
+	font-size: 1.2em;
+}
+
+.tekst-groot .hero-carrousel p {
+	font-size: 1.3em;
+}
+
+video {
+	width: 100%;
+	aspect-ratio: 4 / 3;
+	object-fit: cover;
+	border-radius: 0.5em;
 }
