@@ -210,7 +210,7 @@ function createHeroCarrousel(carrouselID) {
 
 /********** DE CARROUSEL CREËREN **********/
 // ChatGPT prompt: Kan je ook bepaalde functions creeren op bepaalde pagina's met javascript? Ik krijg anders errors
-if (window.location.pathname === "/index.html") {
+if (window.location.pathname === "../index.html") {
 	(function() { // nadat de pagina geladen is, de carrousels activeren
 		createHeroCarrousel("home-hero-slider"); // hier de id gebruiken van de section in de html (je kunt hier ook meerdere carrousellen activeren)
 		})();
@@ -366,7 +366,7 @@ function createActueelCarrousel(carrouselID2) {
 
 /********** DE CARROUSEL CREËREN **********/
 // ChatGPT prompt: Kan je ook bepaalde functions creeren op bepaalde pagina's met javascript? Ik krijg anders errors
-if (window.location.pathname === "/index.html") {
+if (window.location.pathname === "../index.html") {
 	(function() { // nadat de pagina geladen is, de carrousels activeren
 		createActueelCarrousel("actueel-slider"); // hier de id gebruiken van de section in de html (je kunt hier ook meerdere carrousellen activeren)
 		})();
@@ -522,7 +522,7 @@ function createLevelsCarrousel(carrouselID3) {
 
 /********** DE CARROUSEL CREËREN **********/
 // ChatGPT prompt: Kan je ook bepaalde functions creeren op bepaalde pagina's met javascript? Ik krijg anders errors
-if (window.location.pathname === "/porsche-24.html") {
+if (window.location.pathname === "../porsche-24.html") {
 	(function() { // nadat de pagina geladen is, de carrousels activeren
 		createLevelsCarrousel("levels-slider"); // hier de id gebruiken van de section in de html (je kunt hier ook meerdere carrousellen activeren)
 		})();
@@ -658,7 +658,7 @@ function createAftermoviesCarrousel(carrouselID4) {
 
 /********** DE CARROUSEL CREËREN **********/
 // ChatGPT prompt: Kan je ook bepaalde functions creeren op bepaalde pagina's met javascript? Ik krijg anders errors
-if (window.location.pathname === "/porsche-24.html") {
+if (window.location.pathname === "../porsche-24.html") {
 	(function() { // nadat de pagina geladen is, de carrousels activeren
 		createAftermoviesCarrousel("aftermovies-slider"); // hier de id gebruiken van de section in de html (je kunt hier ook meerdere carrousellen activeren)
 		})();
