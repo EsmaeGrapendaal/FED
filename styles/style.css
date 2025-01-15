@@ -483,6 +483,10 @@ footer h4 {
 	margin-bottom: 1em;
 }
 
+footer p {
+	word-break: break-word;
+}
+
 footer > nav {
 	padding: 2em;
 }

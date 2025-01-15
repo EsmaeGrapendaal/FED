@@ -646,7 +646,7 @@ function createAftermoviesCarrousel(carrouselID4) {
 	function updateBolletjes4(newElement4){
 		let currentBolletje4 = carrousel4.querySelector(":scope > nav .current"); // het huidige current bolletje opzoeken
 		currentBolletje4.classList.remove("current"); // de class current verwijderen
-		let newBolletje4 = carrousel4.querySelector("a[href='#"+newElement4.id+"']"); // het nieuwe bolletje opzoeken
+		let newBolletje4 = carrousel4.querySelector("a[href='..#"+newElement4.id+"']"); // het nieuwe bolletje opzoeken
 		newBolletje4.classList.add("current"); // de class current toevoegen
 	}
 
